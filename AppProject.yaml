@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: guptaji-tech-web
+  namespace: argocd
+spec:
+  description: guptaji-tech-web
+  sourceRepos:
+    - 'https://github.com/guptaji-tech-web/*'
+  destinations:
+    - namespace: '*'                
+      server: 'https://34.169.186.145'
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
