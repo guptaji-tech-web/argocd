@@ -7,7 +7,7 @@ spec:
   project: guptaji-tech-web                
   
   source:
-    repoURL: 'https://github.com/guptaji-tech-web/python-app.git'
+    repoURL: 'https://github.com/guptaji-tech-web/python-app-manifest.git'
     targetRevision: sit
     path: /
   
