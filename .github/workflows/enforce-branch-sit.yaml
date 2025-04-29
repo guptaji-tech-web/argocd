@@ -9,8 +9,8 @@ jobs:
   check-branch:
     runs-on: ubuntu-latest
     steps:
-      - name: Fail if source branch is not 'feature'
-        if: "!startsWith(github.head_ref, 'feature-')"
+      - name: Fail if source branch is not 'develop'
+        if: github.head_ref != 'develop'
         run: |
-          echo "You can only create PRs to sit from feature branch."
+          echo "You can only create PRs to sit from develop branch."
           exit 1
