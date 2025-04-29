@@ -8,12 +8,12 @@ spec:
   
   source:
     repoURL: 'https://github.com/guptaji-tech-web/python-app-manifest.git'
-    targetRevision: sit
+    targetRevision: develop
     path: /
   
   destination:
     server: 'https://34.169.186.145'
-    namespace: python-app-sit              
+    namespace: python-app-develop              
   
   syncPolicy:
     automated:                         
